@@ -23,6 +23,7 @@ namespace eShopSolution.BackendApi.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
             var resultToken = await _userService.Authenticate(request);
             if (string.IsNullOrEmpty(resultToken))
             {
