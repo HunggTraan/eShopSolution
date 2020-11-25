@@ -25,7 +25,7 @@ namespace eShopSolution.ViewModels.System.Users
             RuleFor(x => x.UserName).NotEmpty().WithMessage("Username is required!");
 
             RuleFor(x => x.Password).NotEmpty().WithMessage("Password is required!")
-                .MinimumLength(8).WithMessage("Password needs at least 8 characters");
+                .MinimumLength(6).WithMessage("Password needs at least 6 characters");
 
             RuleFor(x => x).Custom((request, context) =>
             {
