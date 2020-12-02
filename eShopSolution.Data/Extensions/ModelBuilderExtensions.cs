@@ -148,7 +148,7 @@ namespace eShopSolution.Data.Extensions
                 SecurityStamp = string.Empty,
                 FirstName = "Hung",
                 LastName = "Tran",
-                Dob = new DateTime(2020,12,30)
+                Dob = new DateTime(2020, 12, 30)
             });
 
             modelBuilder.Entity<IdentityUserRole<Guid>>().HasData(new IdentityUserRole<Guid>
