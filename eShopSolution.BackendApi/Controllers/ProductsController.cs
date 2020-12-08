@@ -167,5 +167,18 @@ namespace eShopSolution.BackendApi.Controllers
                 return BadRequest("Cannot find product");
             return Ok(image);
         }
+
+        [HttpPut("{id}/categories")]
+        public async Task<IActionResult> CategoryAssign(int id, [FromBody] CategoryAssignRequest categoryAssignRequest)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var result = await _productService.CategoryAssign(id, categoryAssignRequest);
+            if (!result.IsSuccessed)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
     }
 }
