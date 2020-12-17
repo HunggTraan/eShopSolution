@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.WebApp", "eShopSolution.WebApp\eShopSolution.WebApp.csproj", "{36F51FF0-05D3-486E-BEE9-523CEA104F19}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9A6234AB-857A-4A9C-AAAF-4EC12FBBA683} = {9A6234AB-857A-4A9C-AAAF-4EC12FBBA683}
+		{A62E8BC4-21E7-4115-A6FD-DA5AA0B17F82} = {A62E8BC4-21E7-4115-A6FD-DA5AA0B17F82}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution Items", "0. Solution Items", "{C6911B9E-1F11-4AC7-955B-9848B686A16E}"
 	ProjectSection(SolutionItems) = preProject
@@ -26,7 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Host", "3. Host", "{879647D5-4995-4C93-80CC-0649C0FC451C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.AdminApp", "eShopSolution.AdminApp\eShopSolution.AdminApp.csproj", "{9A6234AB-857A-4A9C-AAAF-4EC12FBBA683}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.AdminApp", "eShopSolution.AdminApp\eShopSolution.AdminApp.csproj", "{9A6234AB-857A-4A9C-AAAF-4EC12FBBA683}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
