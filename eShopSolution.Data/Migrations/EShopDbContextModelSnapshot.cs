@@ -180,7 +180,7 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = new Guid("36e2e33f-7136-4652-b5b6-9873ca6310cc"),
-                            ConcurrencyStamp = "f8785ddc-14b6-4d25-ac70-1219fa5316d2",
+                            ConcurrencyStamp = "f32fe69a-572e-4e2f-aee2-06185f8e7ba7",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -257,7 +257,7 @@ namespace eShopSolution.Data.Migrations
                         {
                             Id = new Guid("e953781a-de39-459c-a246-9fd5035478e5"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0b2bbfdd-ec96-4232-9c81-8d67b6268ace",
+                            ConcurrencyStamp = "73160ce0-6692-4ba1-95b2-b7472d3645ac",
                             Dob = new DateTime(2020, 12, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "tuanhung30121998@gmail.com",
                             EmailConfirmed = true,
@@ -266,7 +266,7 @@ namespace eShopSolution.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "tuanhung30121998@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEE+z+36us3od4lSFISAWBmkR2O2p7+C6xdUYG8T+PKhDI+TSqKpEMSfQeht9qzSxgQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAENCCkBJbovrvZwNBViSog4HQQyb/7RACiAIju2GtkZLSe9CttySwWCGM52HLg1sT4w==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -400,7 +400,7 @@ namespace eShopSolution.Data.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            LanguageId = "vi-VN",
+                            LanguageId = "vi",
                             Name = "Áo nam",
                             SeoAlias = "ao-nam",
                             SeoDescription = "Sản phẩm áo thời trang nam",
@@ -410,7 +410,7 @@ namespace eShopSolution.Data.Migrations
                         {
                             Id = 2,
                             CategoryId = 1,
-                            LanguageId = "en-US",
+                            LanguageId = "en",
                             Name = "Men shirt",
                             SeoAlias = "men-shirt",
                             SeoDescription = "Shirt products for men",
@@ -420,7 +420,7 @@ namespace eShopSolution.Data.Migrations
                         {
                             Id = 3,
                             CategoryId = 2,
-                            LanguageId = "vi-VN",
+                            LanguageId = "vi",
                             Name = "Áo nữ",
                             SeoAlias = "ao-nu",
                             SeoDescription = "Sản phẩm áo thời trang nữ",
@@ -430,7 +430,7 @@ namespace eShopSolution.Data.Migrations
                         {
                             Id = 4,
                             CategoryId = 2,
-                            LanguageId = "en-US",
+                            LanguageId = "en",
                             Name = "Women shirt",
                             SeoAlias = "women-shirt",
                             SeoDescription = "Shirt products for women",
@@ -496,13 +496,13 @@ namespace eShopSolution.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "vi-VN",
+                            Id = "vi",
                             IsDefault = true,
                             Name = "Tiếng Việt"
                         },
                         new
                         {
-                            Id = "en-US",
+                            Id = "en",
                             IsDefault = false,
                             Name = "English"
                         });
@@ -614,7 +614,7 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2020, 9, 28, 17, 13, 25, 252, DateTimeKind.Local).AddTicks(8842),
+                            DateCreated = new DateTime(2020, 12, 21, 11, 34, 32, 110, DateTimeKind.Local).AddTicks(7814),
                             OriginalPrice = 100000m,
                             Price = 200000m,
                             Stock = 0,
@@ -739,7 +739,7 @@ namespace eShopSolution.Data.Migrations
                             Id = 1,
                             Description = "Áo sơ mi nam trắng Việt Tiến",
                             Details = "Áo sơ mi nam trắng Việt Tiến",
-                            LanguageId = "vi-VN",
+                            LanguageId = "vi",
                             Name = "Áo sơ mi nam trắng Việt Tiến",
                             ProductId = 1,
                             SeoAlias = "ao-so-mi-nam-trang-Viet-Tien",
@@ -751,7 +751,7 @@ namespace eShopSolution.Data.Migrations
                             Id = 2,
                             Description = "",
                             Details = "Viet Tien Men T-shirt",
-                            LanguageId = "en-US",
+                            LanguageId = "en",
                             Name = "Viet Tien Men T-shirt",
                             ProductId = 1,
                             SeoAlias = "Viet-Tien-men-t-shirt",
