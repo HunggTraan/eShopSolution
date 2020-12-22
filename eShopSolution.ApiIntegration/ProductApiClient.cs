@@ -1,4 +1,5 @@
-﻿using eShopSolution.Utilities.Constants;
+﻿using eShopSolution.ApiIntegration;
+using eShopSolution.Utilities.Constants;
 using eShopSolution.ViewModels.Catalog.Products;
 using eShopSolution.ViewModels.Common;
 using Microsoft.AspNetCore.Http;
@@ -11,7 +12,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eShopSolution.AdminApp.Services
+namespace eShopSolution.ApiIntegration
 {
     public class ProductApiClient : BaseApiClient, IProductApiClient
     {
