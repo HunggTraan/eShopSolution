@@ -15,6 +15,7 @@ namespace eShopSolution.ViewModels.Catalog.Products
         public string SeoTitle { set; get; }
         public string SeoAlias { get; set; }
         public string LanguageId { set; get; }
+        public bool? IsFeatured { get; set; }
         public IFormFile ThumbnailImage { get; set; }
     }
 }
